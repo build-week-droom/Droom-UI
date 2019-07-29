@@ -1,0 +1,15 @@
+.buttonStyle(@fColor:@button-font-color, @bgColor:@button-bg){
+    font:inherit;
+    font-size: 2rem;
+    color:@fColor;
+    background: @bgColor;
+    width:40%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+
+    &:hover{
+        background:@button-bg-hover;
+        color:@button-font-color;
+        border:1px solid @button-font-color;
+    }
+}
