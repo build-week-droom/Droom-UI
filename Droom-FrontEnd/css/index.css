@@ -135,8 +135,10 @@ html {
 }
 html,
 body {
+  width: 100%;
   font-family: 'Work Sans', sans-serif;
   color: black;
+  background-color: #ecedee;
 }
 h1,
 h2,
@@ -156,7 +158,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 a {
@@ -167,15 +169,12 @@ a {
 a:hover {
   color: red;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
 .navBar {
   position: fixed;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  background: #ecedee75;
 }
 .navContain {
   display: flex;
@@ -199,7 +198,6 @@ a:hover {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 .splash {
   display: flex;
@@ -207,34 +205,116 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.splash .splashHolder {
-  display: flex;
-  width: 100%;
-  padding: 0;
+.splash img {
+  max-width: 100%;
 }
-.one {
-  display: flex;
+.splash .CTA {
+  position: absolute;
+  width: 30%;
+  text-align: center;
 }
-.one .stepOneBG {
-  position: relative;
+.splash .buttonSpace {
+  margin: 3rem;
 }
-.one .txtOne {
+.splash .getApp {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
+  background: #B68F40;
+  width: 30%;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+.splash .getApp:hover {
+  background: #B6CCA1;
+  color: black;
+  border: 1px solid black;
+}
+.textContainer {
   position: absolute;
   display: flex;
   flex-flow: row wrap;
-  text-align: center;
+  text-align: justify;
+  justify-content: flex-start;
+  width: 40%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.one {
+  display: flex;
+  background: #B6CCA1;
+  max-width: 100%;
+}
+.one .stepOneBG {
+  margin: 0 auto;
+}
+.one .stepOneBG img {
+  width: 100%;
+}
+.one .bigOneImg {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.one .oneSVG {
+  display: flex;
+  width: 300%;
+  justify-content: flex-end;
+}
+.one .txtOne {
+  margin-top: 15%;
+  margin-left: 30%;
 }
 .one a {
   font: inherit;
   font-size: 2rem;
-  color: #B68F40;
+  color: black;
   background: #B68F40;
-  width: 40%;
+  width: 30%;
   padding: 1rem 3rem;
   border-radius: 10px;
+  margin: 4rem 0;
 }
 .one a:hover {
   background: #B6CCA1;
-  color: #B68F40;
-  border: 1px solid #B68F40;
+  color: black;
+  border: 1px solid black;
+}
+.two {
+  display: flex;
+  flex-direction: row;
+  background: #B6CCA1;
+  width: 100%;
+}
+.two .stepTwoImage img {
+  width: 60%;
+  margin-left: 40%;
+}
+.two .bigTwoImg {
+  width: 15%;
+  margin-left: 31%;
+}
+.two .twoSVG {
+  transform: rotate(90deg);
+}
+.two .txtTwo {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.three {
+  background-color: #30011E;
+  color: #ecedee;
+  width: 100%;
+  min-height: 30rem;
+}
+.three .stepThreeContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.three .threeSVG {
+  width: 20%;
+  justify-content: center;
 }

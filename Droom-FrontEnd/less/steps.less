@@ -1,41 +1,120 @@
+.textContainer{
+    .textBlock;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
 .one {
-    border: 1px solid red;
-    display: flex;
+    // border: 1px solid red;
+    display:flex;
+    // position: relative;
+    background: @step-two-bg; 
+    max-width: 100%;
     
-    
-    
+   
     .stepOneBG {
+       margin:0 auto;
+        
+    }
+
+    .stepOneBG img{
         width:100%;
-        margin:0 auto;
-        position: relative;
+    }
+    
+    .bigOneImg{
+        // border: 1px solid green;
+        position:absolute;
+        margin-top: 10%;
+        margin-left: 20%;
+
+       
+    }
+
+    .oneSVG{
+        display:flex;
+        width:300%;
+        justify-content: flex-end;
+
     }
     
     .txtOne{
-        border: 1px solid green;
-        position: absolute;
-        display:flex;
-        flex-flow: row wrap;
-        text-align: center;
-        justify-content: flex-start;
-        width:40%;
+
+        margin-top: 15%;
+        margin-left: 30%;
     }
 
     a{
         .buttonStyle;
+        margin:4rem 0;
     }
 }
 
 .two{
-    border:1px solid teal;
+    // border:1px solid teal;
+    // position: relative;
+    display:flex;
+    flex-direction: row;
     background: @step-two-bg; 
+    width:100%;
+
+
+    .stepTwoImage{
+        // border: 1px solid orange;
+        
+    }
+    
+    .stepTwoImage img{
+        width: 60%;
+        margin-left:40%;
+    }
+
+    .bigTwoImg{
+        // border: 1px solid orange;
+        width:15%;
+        margin-left: 31%;
+
+  
+    }
+
+    .twoSVG{
+        // position: absolute;
+        transform: rotate(90deg);
+
+
+    }
+
+    .txtTwo{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
 }
 
 
 
 .three{
-    display:flex;
-    border:1px solid orange;
+    // border:1px solid orange;
+    
     background-color: @step-three-bg;
     color: @step-three-font;
+    width:100%;
+    min-height: 30rem;
+
+    .stepThreeContainer{
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    
+    
+    .threeSVG{
+        // display:flex;
+        width:20%;
+        justify-content: center;
+    }
+
 
 }
