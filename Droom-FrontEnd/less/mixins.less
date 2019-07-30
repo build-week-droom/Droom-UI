@@ -1,24 +1,60 @@
-.buttonStyle(@fColor:@button-font-color, @bgColor:@button-bg){
-    font:inherit;
+.buttonStyle(@fColor: @button-font-color, @bgColor: @button-bg) {
+    font: inherit;
     font-size: 2rem;
-    color:@fColor;
+    color: @fColor;
     background: @bgColor;
-    width:30%;
+    width: 30%;
     padding: 1rem 3rem;
     border-radius: 10px;
 
-    &:hover{
-        background:@button-bg-hover;
-        color:@button-font-color;
-        border:1px solid @button-font-color;
+    &:hover {
+        background: @button-bg-hover;
+        color: @button-font-color;
+        border: 1px solid @button-font-color;
     }
 }
 
-.textBlock(){
+.textBlock() {
     position: absolute;
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
     text-align: justify;
     justify-content: flex-start;
-    width:40%;
+    width: 40%;
+}
+
+
+.wobbleAnimation() {
+    animation: wobble-hor-bottom 0.8s linear NaNs both;
+}
+
+.wobbleKey() {
+    @keyframes wobble-hor-bottom {
+
+        0%,
+        100% {
+            transform: translateX(0%);
+            transform-origin: 50% 50%;
+        }
+
+        15% {
+            transform: translateX(-30px) rotate(-6deg);
+        }
+
+        30% {
+            transform: translateX(15px) rotate(6deg);
+        }
+
+        45% {
+            transform: translateX(-15px) rotate(-3.6deg);
+        }
+
+        60% {
+            transform: translateX(9px) rotate(2.4deg);
+        }
+
+        75% {
+            transform: translateX(-6px) rotate(-1.2deg);
+        }
+    }
 }
