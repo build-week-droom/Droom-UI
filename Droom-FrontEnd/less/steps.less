@@ -10,10 +10,13 @@
 
 .one {
     // border: 1px solid red;
+
     display:flex;
     // position: relative;
     background: @step-two-bg; 
     max-width: 100%;
+    padding: 0 0 1rem;
+    z-index:2;
     
    
     .stepOneBG {
@@ -25,8 +28,18 @@
         width:100%;
     }
     
+    .oneSVG{
+        display:flex;
+        width:300%;
+        justify-content: flex-end;
+        opacity: .9;
+        overflow: hidden;
+
+    }
+
     .bigOneImg{
         // border: 1px solid green;
+
         position:absolute;
         margin-top: 10%;
         margin-left: 20%;
@@ -34,12 +47,7 @@
        
     }
 
-    .oneSVG{
-        display:flex;
-        width:300%;
-        justify-content: flex-end;
 
-    }
     
     .txtOne{
 
@@ -59,37 +67,37 @@
     display:flex;
     flex-direction: row;
     background: @step-two-bg; 
+    padding:5rem 8rem 0;
     width:100%;
+    z-index: 2;
 
-
-    .stepTwoImage{
-        // border: 1px solid orange;
-        
-    }
-    
+   
     .stepTwoImage img{
         width: 60%;
-        margin-left:40%;
+        margin-left:100%;
+        // z-index: 3;
+        
     }
 
     .bigTwoImg{
         // border: 1px solid orange;
+
         width:15%;
         margin-left: 31%;
+        z-index: 2;
 
-  
     }
 
-    .twoSVG{
+    .bigTwoSVG{
         // position: absolute;
         transform: rotate(90deg);
-
-
+        min-width: 100%;
     }
 
     .txtTwo{
         margin-left: 10%;
         margin-top: 5%;
+        overflow: hidden;
     }
 }
 
@@ -101,20 +109,37 @@
     background-color: @step-three-bg;
     color: @step-three-font;
     width:100%;
-    min-height: 30rem;
-
+    z-index: 1;
+   
     .stepThreeContainer{
-        display: flex;
-        flex-flow: row wrap;
+        // border:4px solid green;
+        // width:100%;
+        // max-width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
 
     }
     
-    
-    .threeSVG{
-        // display:flex;
-        width:20%;
-        justify-content: center;
+    .textContainerLeft{
+        // border: 1px dashed green;
+        width: 30%;
+        margin:0 auto;
+    }
+
+    .bigThreeImg {
+        // border: 1px solid salmon;
+        width:15%;
+        margin: 0 auto;     
+    }
+
+    .textContainerRight{
+        // border: 1px dashed green;
+        width:30%;
+        margin:0 auto;
     }
 
 
+    
 }

@@ -174,7 +174,7 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  background: #ecedee75;
+  z-index: 1;
 }
 .navContain {
   display: flex;
@@ -247,6 +247,8 @@ a:hover {
   display: flex;
   background: #B6CCA1;
   max-width: 100%;
+  padding: 0 0 1rem;
+  z-index: 2;
 }
 .one .stepOneBG {
   margin: 0 auto;
@@ -254,15 +256,17 @@ a:hover {
 .one .stepOneBG img {
   width: 100%;
 }
-.one .bigOneImg {
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 20%;
-}
 .one .oneSVG {
   display: flex;
   width: 300%;
   justify-content: flex-end;
+  opacity: 0.9;
+  overflow: hidden;
+}
+.one .bigOneImg {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
 }
 .one .txtOne {
   margin-top: 15%;
@@ -287,34 +291,49 @@ a:hover {
   display: flex;
   flex-direction: row;
   background: #B6CCA1;
+  padding: 5rem 8rem 0;
   width: 100%;
+  z-index: 2;
 }
 .two .stepTwoImage img {
   width: 60%;
-  margin-left: 40%;
+  margin-left: 100%;
 }
 .two .bigTwoImg {
   width: 15%;
   margin-left: 31%;
+  z-index: 2;
 }
-.two .twoSVG {
+.two .bigTwoSVG {
   transform: rotate(90deg);
+  min-width: 100%;
 }
 .two .txtTwo {
   margin-left: 10%;
   margin-top: 5%;
+  overflow: hidden;
 }
 .three {
   background-color: #30011E;
   color: #ecedee;
   width: 100%;
-  min-height: 30rem;
+  z-index: 1;
 }
 .three .stepThreeContainer {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
 }
-.three .threeSVG {
-  width: 20%;
-  justify-content: center;
+.three .textContainerLeft {
+  width: 30%;
+  margin: 0 auto;
+}
+.three .bigThreeImg {
+  width: 15%;
+  margin: 0 auto;
+}
+.three .textContainerRight {
+  width: 30%;
+  margin: 0 auto;
 }
