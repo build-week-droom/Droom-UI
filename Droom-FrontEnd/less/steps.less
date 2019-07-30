@@ -1,17 +1,23 @@
 .one {
+    border: 1px solid red;
     display: flex;
     
     
     
     .stepOneBG {
+        width:100%;
+        margin:0 auto;
         position: relative;
     }
     
     .txtOne{
+        border: 1px solid green;
         position: absolute;
         display:flex;
         flex-flow: row wrap;
         text-align: center;
+        justify-content: flex-start;
+        width:40%;
     }
 
     a{
@@ -19,3 +25,17 @@
     }
 }
 
+.two{
+    border:1px solid teal;
+    background: @step-two-bg; 
+}
+
+
+
+.three{
+    display:flex;
+    border:1px solid orange;
+    background-color: @step-three-bg;
+    color: @step-three-font;
+
+}
