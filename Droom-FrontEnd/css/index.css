@@ -230,6 +230,11 @@ a:hover {
   color: black;
   border: 1px solid black;
 }
+.foot {
+  text-align: center;
+  background-color: #30011E;
+  color: #ecedee;
+}
 .textContainer {
   position: absolute;
   display: flex;
