@@ -43,8 +43,8 @@
 </header>
 
 <body>
-  <div class="formWrap" >
-    <form class= "loginForm" action="action_page.php">
+  <div class="formWrap">
+    <form class="loginForm" action="action_page.php">
 
       <div class="container">
         <label for="uname"><b>Username</b></label>
@@ -54,14 +54,19 @@
         <input type="password" placeholder="Enter Password" name="psw" required>
 
         <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
+
+        <span class="underLogin">
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+
+          <span class="psw">I Forgot <a href="#">password?</a></span>
+        </span>
       </div>
 
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">I Forgot <a href="#">password?</a></span>
+        <button type="button" class="cancelbtn" onclick ="goBack(index.html)">Cancel</button>
+
       </div>
     </form>
   </div>

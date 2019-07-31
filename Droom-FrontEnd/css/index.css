@@ -523,10 +523,9 @@ body {
   width: 70%;
   /* Full-width inputs */
   /* Set a style for all buttons */
-  /* Add a hover effect for buttons */
   /* Extra style for the cancel button (red) */
   /* Add padding to containers */
-  /* The "Forgot password" text */
+  /* under Login spacing */
   /* Change styles for span and cancel button on extra small screens */
 }
 @media (max-width:970px) {
@@ -541,6 +540,9 @@ body {
   }
 }
 .formWrap .loginForm {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
   border: 3px solid black;
 }
 .formWrap input[type=text],
@@ -553,10 +555,13 @@ body {
   box-sizing: border-box;
 }
 .formWrap button {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
   background-color: #30011E;
   color: #ecedee;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px auto;
   border: none;
   cursor: pointer;
   width: 80%;
@@ -572,11 +577,11 @@ body {
   background-color: #f44336;
 }
 .formWrap .container {
-  padding: 16px;
+  padding: 5%;
 }
-.formWrap .psw {
-  float: left;
-  padding-top: 16px;
+.formWrap .underLogin {
+  display: flex;
+  justify-content: space-between;
 }
 @media (max-width:501px) {
   .formWrap span.psw {

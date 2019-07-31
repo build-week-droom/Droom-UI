@@ -19,6 +19,7 @@ body{
   }
 
   .loginForm {
+    .fontStyle();
     border: 3px solid black;
   }
 
@@ -35,10 +36,11 @@ body{
 
   /* Set a style for all buttons */
   button {
+    .fontStyle();
     background-color: @step-three-bg;
     color: @step-three-font;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px auto;
     border: none;
     cursor: pointer;
     width: 80%;
@@ -50,7 +52,6 @@ body{
       }
   }
 
-  /* Add a hover effect for buttons */
 
   /* Extra style for the cancel button (red) */
   .cancelbtn {
@@ -61,13 +62,14 @@ body{
 
   /* Add padding to containers */
   .container {
-    padding: 16px;
+    padding: 5%;
   }
 
-  /* The "Forgot password" text */
-  .psw {
-    float: left;
-    padding-top: 16px;
+
+  /* under Login spacing */
+  .underLogin{
+    display:flex;
+    justify-content: space-between;
   }
 
   /* Change styles for span and cancel button on extra small screens */
