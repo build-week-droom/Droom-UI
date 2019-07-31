@@ -5,6 +5,7 @@
 /*Home Page - Step 3 Colors*/
 /* mobile text background */
 /* Colors */
+/* Gradient Colors */
 /* Media Quieries */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -279,35 +280,12 @@ a:hover {
   width: 30%;
   padding: 3% 8%;
   border-radius: 5px;
-  border: 1px solid  ;
-  animation: wobble-hor-bottom 0.8s linear NaNs both;
+  font-weight: bold;
 }
 .splash .getApp:hover {
   background: #B6CCA1;
   color: black;
   border: 1px solid black;
-}
-@keyframes wobble-hor-bottom {
-  0%,
-  100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-  15% {
-    transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    transform: translateX(-6px) rotate(-1.2deg);
-  }
 }
 .foot {
   text-align: center;
@@ -364,7 +342,6 @@ a:hover {
   position: absolute;
   margin-top: 10%;
   margin-left: 34%;
-  overflow: hidden;
   z-index: 1;
 }
 @media (max-width:501px) {
@@ -392,7 +369,7 @@ a:hover {
   width: 30%;
   padding: 3% 8%;
   border-radius: 5px;
-  border: 1px solid  ;
+  font-weight: bold;
   margin: 4rem 0;
 }
 .one a:hover {
@@ -512,11 +489,39 @@ a:hover {
     width: 100%;
   }
 }
+/* About Page */
+.navBar {
+  position: initial;
+}
+html {
+  background: url(../img/About\ Photos/About-BG.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about--us {
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  margin: 4% auto;
+  align-content: center;
+  justify-content: center;
+}
+.about--us p {
+  padding: 0 2%;
+}
+.about--team {
+  padding: 0 5%;
+  display: flex;
+}
+@media (max-width:501px) {
+}
+.about--team img {
+  width: 100%;
+}
 /*Login Page */
 /* Bordered form */
-body {
-  background: #ecedee;
-}
 .formWrap {
   padding: 15%;
   margin: 0 auto;
