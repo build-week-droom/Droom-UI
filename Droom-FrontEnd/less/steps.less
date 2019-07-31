@@ -1,10 +1,9 @@
-
 .one {
     // border: 1px solid red;
 
     display:flex;
-    // position: relative;
-    background: @step-two-bg; 
+    position: relative;
+    background: @step-one-bg; 
     max-width: 100%;
      
    
@@ -15,29 +14,20 @@
 
     .stepOneBG img{
         width:100%;
+        @media @mobile {
+            visibility: hidden;
+        }
     }
     
-    .oneSVG{
-        display:flex;
-        width:300%;
-        justify-content: flex-end;
-        opacity: .9;
-        overflow: hidden;  
 
-        @media @mobile{
-            transform: rotate(90deg);
-            width:200%;
-        }
-
-    }
 
     .bigOneImg{
         // border: 1px solid green;
 
         position:absolute;
         margin-top: 10%;
-        margin-left: 20%;
-        // z-index: 3;
+        margin-left: 18%;
+
 
         @media @mobile {
             margin:0;
@@ -46,18 +36,41 @@
        
     }
 
+    .oneSVG{
+        position: relative;
+        display:flex;
+        width:300%;
+        justify-content: flex-end;
+        opacity: .9;
+        overflow: hidden;  
+        // z-index: 2;
 
+        @media @mobile{
+            transform: rotate(90deg);
+            width:200%;
+        }
+
+    }
     
     .txtOne{
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 34%;
+        overflow: auto;
+        z-index: 1;
+        
 
-        margin-top: 15%;
-        margin-left: 30%;
 
         @media @mobile {
-         margin:0;   
-         text-align: center;
+            .mobileTextStyle;
+        //  padding:2%;
+         margin:5% 0;   
+         background-attachment: fixed;
+        //  text-align: justify;
         }
     }
+
+
 
     a{
         .buttonStyle;
@@ -65,9 +78,11 @@
     }
 }
 
+
+
 .two{
     // border:1px solid teal;
-    // position: relative;
+    position: relative;
     display:flex;
     flex-direction: row;
     background: @step-two-bg; 
@@ -75,33 +90,47 @@
     width:100%;
     z-index: 2;
 
+    @media @mobile {
+        
+    }
+
    
-    .stepTwoImage img{
+    .stepTwoImage img{ //ipad image
+        position: relative;
         width: 60%;
         margin-left:100%;
-        // z-index: 3;
+        z-index: 3;
+
+        @media @mobile {
+         visibility:hidden;
+        }
         
     }
 
     .bigTwoImg{
         // border: 1px solid orange;
 
+        position: absolute;
         width:15%;
-        margin-left: 31%;
-        z-index: 2;
-
+        margin-left: 78%;
+        
     }
-
+    
     .bigTwoSVG{
-        // position: absolute;
         transform: rotate(90deg);
         min-width: 100%;
+        z-index: 4;
     }
 
     .txtTwo{
         margin-left: 10%;
         margin-top: 5%;
         overflow: hidden;
+
+        @media @mobile {
+            margin:0;
+            width:100%;
+        }
     }
 }
 

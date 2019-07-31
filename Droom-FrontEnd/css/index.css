@@ -1,5 +1,6 @@
 /* Global Colors */
 /*button Colors */
+/* Home Page - step 1 */
 /* Home Page - Step 2 Colors */
 /*Home Page - Step 3 Colors*/
 /* mobile text background */
@@ -193,12 +194,13 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  background: #9b9b9b75;
+  background: #fffdfdad;
   z-index: 1;
 }
 @media (max-width:501px) {
   .navBar {
     background: none;
+    position: absolute;
   }
 }
 .navContain {
@@ -248,7 +250,7 @@ a:hover {
   .splash .CTA {
     width: 95%;
     padding: 1%;
-    background: #9b9b9b75;
+    background: #fffdfdad;
     border-radius: 5px;
   }
 }
@@ -299,7 +301,8 @@ a:hover {
 }
 .one {
   display: flex;
-  background: #B6CCA1;
+  position: relative;
+  background: #545454;
   max-width: 100%;
 }
 .one .stepOneBG {
@@ -308,7 +311,23 @@ a:hover {
 .one .stepOneBG img {
   width: 100%;
 }
+@media (max-width:501px) {
+  .one .stepOneBG img {
+    visibility: hidden;
+  }
+}
+.one .bigOneImg {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 18%;
+}
+@media (max-width:501px) {
+  .one .bigOneImg {
+    margin: 0;
+  }
+}
 .one .oneSVG {
+  position: relative;
   display: flex;
   width: 300%;
   justify-content: flex-end;
@@ -321,24 +340,21 @@ a:hover {
     width: 200%;
   }
 }
-.one .bigOneImg {
+.one .txtOne {
   position: absolute;
   margin-top: 10%;
-  margin-left: 20%;
-}
-@media (max-width:501px) {
-  .one .bigOneImg {
-    margin: 0;
-  }
-}
-.one .txtOne {
-  margin-top: 15%;
-  margin-left: 30%;
+  margin-left: 34%;
+  overflow: auto;
+  z-index: 1;
 }
 @media (max-width:501px) {
   .one .txtOne {
-    margin: 0;
-    text-align: center;
+    width: 95%;
+    padding: 1%;
+    background: #fffdfdad;
+    border-radius: 5px;
+    margin: 5% 0;
+    background-attachment: fixed;
   }
 }
 .one a {
@@ -357,6 +373,7 @@ a:hover {
   border: 1px solid black;
 }
 .two {
+  position: relative;
   display: flex;
   flex-direction: row;
   background: #B6CCA1;
@@ -365,22 +382,36 @@ a:hover {
   z-index: 2;
 }
 .two .stepTwoImage img {
+  position: relative;
   width: 60%;
   margin-left: 100%;
+  z-index: 3;
+}
+@media (max-width:501px) {
+  .two .stepTwoImage img {
+    visibility: hidden;
+  }
 }
 .two .bigTwoImg {
+  position: absolute;
   width: 15%;
-  margin-left: 31%;
-  z-index: 2;
+  margin-left: 78%;
 }
 .two .bigTwoSVG {
   transform: rotate(90deg);
   min-width: 100%;
+  z-index: 4;
 }
 .two .txtTwo {
   margin-left: 10%;
   margin-top: 5%;
   overflow: hidden;
+}
+@media (max-width:501px) {
+  .two .txtTwo {
+    margin: 0;
+    width: 100%;
+  }
 }
 .three {
   background-color: #30011E;
