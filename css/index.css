@@ -5,6 +5,7 @@
 /*Home Page - Step 3 Colors*/
 /* mobile text background */
 /* Colors */
+/* Gradient Colors */
 /* Media Quieries */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -279,7 +280,7 @@ a:hover {
   width: 30%;
   padding: 3% 8%;
   border-radius: 5px;
-  border: 1px solid  ;
+  font-weight: bold;
   animation: wobble-hor-bottom 0.8s linear NaNs both;
 }
 .splash .getApp:hover {
@@ -392,7 +393,7 @@ a:hover {
   width: 30%;
   padding: 3% 8%;
   border-radius: 5px;
-  border: 1px solid  ;
+  font-weight: bold;
   margin: 4rem 0;
 }
 .one a:hover {
@@ -511,6 +512,19 @@ a:hover {
   .three .textContainerRight {
     width: 100%;
   }
+}
+/* About Page */
+.about--team {
+  padding: 10% 5%;
+  display: flex;
+}
+@media (max-width:501px) {
+  .about--team {
+    padding: 25% 2%;
+  }
+}
+.about--team img {
+  width: 100%;
 }
 /*Login Page */
 /* Bordered form */
