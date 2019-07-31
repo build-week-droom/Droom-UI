@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+
+  <title>Droom - Log In</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+
+  <!-- Bootstrap load in -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+
+<header class="navBar">
+  <div class="navContain">
+    <div class="logoContain">
+      <a href="index.html">
+        <img class="logo" src="img/Droom Logo Black.svg"
+          alt=" Droom Logo: the two 'o's intertwine to make the symbol for infinity" style="width:65%">
+      </a>
+    </div>
+
+    <div class="navButtons">
+      <nav>
+        <a href="#download"> Download</a>
+        <a href="about.html"> About</a>
+        <a href="login.html">Log In</a>
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="formWrap">
+    <form class="loginForm" action="action_page.php">
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+
+        <span class="underLogin">
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+
+          <span class="psw">I Forgot <a href="#">password?</a></span>
+        </span>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn" onclick ="goBack(index.html)">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+</body>

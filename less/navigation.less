@@ -1,39 +1,63 @@
-// Navigation code here
-.navContainer{
+.navBar {
     position: fixed;
-    top:0;
-    width:100%;
-    opacity:0.9;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    // background: @nav-bg;
     z-index: 1;
 
-    background:@nav-border;
-    margin:0 auto;
+    @media @tablet {
+        background: none;
+        position: relative;
 
-    @media @phone {
-       position: relative;
     }
 
+    @media @mobile {
+        background: none;
+        position: absolute;
+    }
 
+}
 
-    .navWrap{
-        display:flex;
-        flex-direction:column;
+.navContain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 5%;
+
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        
     }
 
-    .navButtons{
-        padding:1rem;
+
+
+    .navButtons {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @media @mobile {
+            // background:red;
+            visibility: hidden;
+        }
     }
-    
+
     a {
-        .hoverColor(orange);
-        text-decoration: none;
-        color:@nav-font;
-        font-size: 2rem;
-        padding:1rem;
+        padding: 0 2rem;
     }
-    .logo{
-        padding:1rem 0;
+
+}
+
+
+.logo {
+    width: 20%;
+
+    @media @mobile {
+        width: 40%;
     }
+
 }

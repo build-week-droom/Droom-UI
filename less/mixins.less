@@ -1,47 +1,76 @@
-// Mixins Here
 
-.buttonStyle(@fColor:@nav-border, @bgColor:@shuttle-gray){
-    font:inherit;
+// Standard styling for buttons + Hover actions
+.buttonStyle(@fColor: @button-font-color, @bgColor: @button-bg) {
+    font: inherit;
     font-size: 2rem;
-    color:@fColor;
+    color: @fColor;
     background: @bgColor;
-    width:40%;
-    padding: 1rem 3rem;
-    border-radius: 10px;
+    width: 30%;
+    padding:3% 8%;
+    border-radius: 5px;
+    border:1px solid  ;
 
-    &:hover{
-        background:@wild-sand;
-        color:@shuttle-gray;
-        border:1px solid @shuttle-gray;
+    &:hover {
+        background: @button-bg-hover;
+        color: @button-font-color;
+        border: 1px solid @button-font-color;
     }
 }
 
-.imgBorder{
-    border-radius: 20px;
+.fontStyle(@fColor: @button-font-color){
+    font: inherit;
+    font-size: 2rem;
+    color: @fColor;
 }
 
-.hoverColor(@color){
-
-    &:hover{
-        color:@color;
-    }
+.textBlock() {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: justify;
+    justify-content: flex-start;
+    width: 40%;
 }
 
+.mobileTextStyle(){
+    width:95%;
+    padding: 1%;
+    background:@mobile-bg;
+    border-radius: 5px;
+}
 
-/*animations*/
+// Wobble Animation For Get APP Button
+.wobbleAnimation() {
+    animation: wobble-hor-bottom 0.8s linear NaNs both;
+}
 
+.wobbleKey() {
+    @keyframes wobble-hor-bottom {
 
-.rotateKey(){
-    @keyframes rotate-center {
-        0% {
-          transform: rotate(0);
-        }
+        0%,
         100% {
-          transform: rotate(360deg);
+            transform: translateX(0%);
+            transform-origin: 50% 50%;
         }
-      }
-}
 
-.rotationAnimation(){
-    animation: rotate-center 3s linear infinite both;
+        15% {
+            transform: translateX(-30px) rotate(-6deg);
+        }
+
+        30% {
+            transform: translateX(15px) rotate(6deg);
+        }
+
+        45% {
+            transform: translateX(-15px) rotate(-3.6deg);
+        }
+
+        60% {
+            transform: translateX(9px) rotate(2.4deg);
+        }
+
+        75% {
+            transform: translateX(-6px) rotate(-1.2deg);
+        }
+    }
 }
