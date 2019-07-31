@@ -189,6 +189,7 @@ a:hover {
   flex-direction: column;
   width: 100%;
 }
+/*Home Page*/
 .navBar {
   position: fixed;
   width: 100%;
@@ -496,3 +497,5 @@ a:hover {
     width: 100%;
   }
 }
+/*Login Page */
+@import "login";
