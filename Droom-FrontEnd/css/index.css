@@ -332,19 +332,24 @@ a:hover {
   width: 300%;
   justify-content: flex-end;
   opacity: 0.9;
-  overflow: hidden;
 }
 @media (max-width:501px) {
   .one .oneSVG {
     transform: rotate(90deg);
     width: 200%;
+    opacity: 1;
+  }
+}
+@media (max-width:501px) {
+  .one .textContainerOne {
+    align-self: center;
   }
 }
 .one .txtOne {
   position: absolute;
   margin-top: 10%;
   margin-left: 34%;
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
 }
 @media (max-width:501px) {
@@ -353,8 +358,15 @@ a:hover {
     padding: 1%;
     background: #fffdfdad;
     border-radius: 5px;
-    margin: 5% 0;
+    position: initial;
+    margin: 5% auto;
+    padding: 2%;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
   }
 }
 .one a {
@@ -381,14 +393,26 @@ a:hover {
   width: 100%;
   z-index: 2;
 }
-.two .stepTwoImage img {
+@media (max-width:501px) {
+  .two {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+}
+.two .containerTwo {
+  display: flex;
+  flex-flow: row nowrap;
   position: relative;
+}
+.two .stepTwoImage img {
   width: 60%;
-  margin-left: 100%;
+  position: relative;
   z-index: 3;
 }
 @media (max-width:501px) {
   .two .stepTwoImage img {
+    margin: 0;
     visibility: hidden;
   }
 }
@@ -397,20 +421,35 @@ a:hover {
   width: 15%;
   margin-left: 78%;
 }
+@media (max-width:501px) {
+  .two .bigTwoImg {
+    position: initial;
+    overflow: auto;
+    margin: 0;
+    width: 150%;
+    transform: rotate(0deg);
+  }
+}
 .two .bigTwoSVG {
   transform: rotate(90deg);
   min-width: 100%;
-  z-index: 4;
+  z-index: 5;
+}
+@media (max-width:501px) {
+  .two .bigTwoSVG {
+    position: initial;
+    transform: rotate(0deg);
+  }
 }
 .two .txtTwo {
+  width: 60%;
   margin-left: 10%;
   margin-top: 5%;
-  overflow: hidden;
 }
 @media (max-width:501px) {
   .two .txtTwo {
+    position: initial;
     margin: 0;
-    width: 100%;
   }
 }
 .three {
@@ -425,15 +464,35 @@ a:hover {
   align-items: center;
   padding: 2%;
 }
+@media (max-width:501px) {
+  .three .stepThreeContainer {
+    flex-flow: column nowrap;
+  }
+}
 .three .textContainerLeft {
   width: 30%;
   margin: 0 auto;
+}
+@media (max-width:501px) {
+  .three .textContainerLeft {
+    width: 100%;
+  }
 }
 .three .bigThreeImg {
   width: 15%;
   margin: 0 auto;
 }
+@media (max-width:501px) {
+  .three .bigThreeImg {
+    float: right;
+  }
+}
 .three .textContainerRight {
   width: 30%;
   margin: 0 auto;
+}
+@media (max-width:501px) {
+  .three .textContainerRight {
+    width: 100%;
+  }
 }
