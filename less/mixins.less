@@ -1,0 +1,47 @@
+// Mixins Here
+
+.buttonStyle(@fColor:@nav-border, @bgColor:@shuttle-gray){
+    font:inherit;
+    font-size: 2rem;
+    color:@fColor;
+    background: @bgColor;
+    width:40%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+
+    &:hover{
+        background:@wild-sand;
+        color:@shuttle-gray;
+        border:1px solid @shuttle-gray;
+    }
+}
+
+.imgBorder{
+    border-radius: 20px;
+}
+
+.hoverColor(@color){
+
+    &:hover{
+        color:@color;
+    }
+}
+
+
+/*animations*/
+
+
+.rotateKey(){
+    @keyframes rotate-center {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+}
+
+.rotationAnimation(){
+    animation: rotate-center 3s linear infinite both;
+}

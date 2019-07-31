@@ -1,0 +1,39 @@
+// Navigation code here
+.navContainer{
+    position: fixed;
+    top:0;
+    width:100%;
+    opacity:0.9;
+    z-index: 1;
+
+    background:@nav-border;
+    margin:0 auto;
+
+    @media @phone {
+       position: relative;
+    }
+
+
+
+    .navWrap{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        
+    }
+
+    .navButtons{
+        padding:1rem;
+    }
+    
+    a {
+        .hoverColor(orange);
+        text-decoration: none;
+        color:@nav-font;
+        font-size: 2rem;
+        padding:1rem;
+    }
+    .logo{
+        padding:1rem 0;
+    }
+}
