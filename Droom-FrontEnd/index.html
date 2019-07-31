@@ -7,28 +7,30 @@
 
 
   <title>Droom</title>
+
   
   <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  
 
-  <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+  <!-- Bootstrap load in -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <meta name=“viewport” content=“width=device-width, initial-scale=1">
 
 </head>
 
 <header class="navBar">
   <div class="navContain">
+    <a href="index.html">
     <img class="logo" src="img/Droom Logo Black.svg"
-      alt=" Droom Logo: the two 'o's intertwine to make the symbol for infinity">
-
+      alt=" Droom Logo: the two 'o's intertwine to make the symbol for infinity" style="width:65%">
+    </a>
     <div class="navButtons">
       <nav>
-        <a href="#download"> Download</a>
-        <a href="#about"> About</a>
-        <a href="#sign-up">Log In</a>
+          <a href= "#download"> Download</a>
+          <a href="about.html"> About</a>
+          <a href="login.html">Log In</a>
 
       </nav>
     </div>
@@ -36,33 +38,43 @@
 
 </header>
 
-<body class = "container">
+<body class="container">
 
   <section class="splash">
 
     <div class="splashHolder">
-      <div class="splashImg img-right"><img src="img/main Splash/Coffee Phone whole.png"
-          alt=" a pair of hands use the droom app on a cell phone over a wooden coffeeshop table"></div>
+      <div class="splashImg img-right"><img src="img/Back-splash-1.png"
+          alt=" a pair of hands use the droom app on a cell phone over a wooden coffeeshop table" "></div>
     </div>
 
-    <div class="CTA">
-    <h2> Finding a job is now easier than ordering a pizza!</h2>
-    <a href="#download">Get The App</a>
-  </div>
+    <div class=" CTA">
+        <h2> Finding a job is now easier than ordering a pizza!</h2>
+
+        <div class="buttonSpace">
+          <a href="#download" class="getApp">Get The App</a>
+        </div>
+      </div>
 
   </section>
 
   <section class="one">
-    <div class="stepOneBG"> <img src="img/step 1/Step One Background.png" alt="an Iphone sits beside a few books"></div>
+    <!-- <div class="phoneElement">
+      <img src="img/step 1/phone.png" alt="phone with app">
+    </div> -->
 
-    <div class="largeNumber bigOneImg">
-      <h1>1</h1> <!-- Large decorative number may replace with SVG instead of character-->
+    <div class="stepOneBG"> <img src="img/step 1/Step-1-background-nophone.png" alt="an Iphone sits beside a few books">
     </div>
 
-    <div class="textContainer txtOne">
+    <div class="largeNumber bigOneImg">
+      <img src="img/SVGNumbers/one.svg" alt="Step One" class="oneSVG">
+    </div>
+
+    <div class="textContainerOne txtOne">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magnam eius laudantium quis vitae repellendus
         corrupti consectetur necessitatibus facilis, earum deleniti voluptatibus dolores quidem perspiciatis eum et ad
-        impedit magni?</p>
+        impedit magni? </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam nam, nulla, laborum doloremque maxime minima ad asperiores officia totam ducimus? Culpa voluptas nam, natus at minima soluta consequatur quos.</p>
 
       <a href="#signUp" class="button">Sign Up</a>
 
@@ -70,48 +82,69 @@
 
   </section>
 
-  <secction class="two">
-
-    <div class="textContainer">
+  <section class="two">
+<div class="containerTwo">
+    <div class="textContainerTwo txtTwo">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem ea quae magnam. Perspiciatis et eaque,
-        quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo?</p>
+        quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quo veniam fuga excepturi, iste eius, iure ducimus quod ab nam in
+        expedita odit unde. In sed aspernatur alias repellat expedita amet.</p>
 
     </div>
-
-    <div class="Step2Image">
-
-      <img src="img/Step 2/Ipad blank.png" alt="A pair of feminine hands hold an ipad with the Droom app open on it">
+    
+    
+    <div class="stepTwoImage">
+      <img src="img/Step 2/Ipad-step-2.png" alt="A pair of feminine hands hold an ipad with the Droom app open on it">
     </div>
-
+    
     <div class="largeNumber bigTwoImg">
-      <h1>2</h1><!-- Large decorative number may replace with SVG instead of character-->
+      <img src="img/SVGNumbers/two.svg" alt="Step two" class="bigTwoSVG" style="width:100%">
     </div>
-  </secction>
+    </div>
+
+  </section> <!-- End of Section Two-->
 
 
   <section class="three">
 
-    <div class="textContainer">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem ea quae magnam. Perspiciatis et eaque,
-        quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo?</p>
+    <div class="stepThreeContainer">
 
+      <div class="textContainerLeft">
+        <div class="textLeft">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem ea quae magnam. Perspiciatis et eaque,
+            quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam nam, nulla, laborum doloremque maxime minima ad asperiores officia totam ducimus? Culpa voluptas nam, natus at minima soluta consequatur quos.</p>
+
+        </div>
+      </div>
+
+      <div class="largeNumber bigThreeImg">
+        <img src="img/SVGNumbers/three.svg" alt="Step three" class="threeSVG">
+      </div>
+
+
+      <div class="textContainerRight">
+        <div class="textRight">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem ea quae magnam. Perspiciatis et eaque,
+            quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo?</p>  
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam nam, nulla, laborum doloremque maxime minima ad asperiores officia totam ducimus? Culpa voluptas nam, natus at minima soluta consequatur quos.</p>
+
+        </div>
+      </div>
     </div>
 
-    <div class="largeNumber bigThreeImg">
-      <h1>3</h1><!-- Large decorative number may replace with SVG instead of character-->
-    </div>
-
-
-    <div class="textContainer">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem ea quae magnam. Perspiciatis et eaque,
-        quisquam in ab esse dolorem rem officiis, quidem reiciendis numquam impedit repudiandae iure. Quo?</p>
-
-    </div>
-
-  </section>
+  </section> <!--End of Section Three-->
 
 </body>
 
-<footer class = "container">
+<footer class = "foot">
+  <p>Copyright Droom 2019</p>
 
 </footer>
+
+<!--bootstrap scripts-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

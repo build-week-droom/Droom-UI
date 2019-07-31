@@ -1,53 +1,63 @@
 // General Styles
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  html, body {
-    font-family: 'Work Sans', sans-serif;
-    color: black;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-family: inherit;
-    color: black;
-  }
+  box-sizing: border-box;
+}
 
-  h1 {
-      font-size: 3.6rem;
-  }
+html {
+  font-size: 62.5%;
+}
 
-  h2 {
-    font-size: 3rem;
-  }
-  
-  h3 {
-    font-size: 2.8rem;
-  }
-  
-  p {
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }
-  
-  a {
-      text-decoration: none;
-      font-size: 1.8rem;
-      color:black;
-
-      &:hover{
-        color:red;
-      }
-  }
+html, body {
+  width:100%;
+  font-family: 'Work Sans', sans-serif;
+  color: black;
+  background-color: @shell;
+}
 
 
-  .container {
-    width: 100%;
-    margin: 0 auto;  
-  }
-  
-  
+h1, h2, h3, h4, h5 {
+  font-family: inherit;
+  color: black;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color:black;
+
+    &:hover{
+      color:red;
+    }
+}
+
+.textContainer{
+  .textBlock;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+
+
+
+

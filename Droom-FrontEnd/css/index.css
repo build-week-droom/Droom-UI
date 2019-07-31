@@ -1,4 +1,11 @@
+/* Global Colors */
+/*button Colors */
+/* Home Page - step 1 */
+/* Home Page - Step 2 Colors */
+/*Home Page - Step 3 Colors*/
+/* mobile text background */
 /* Colors */
+/* Media Quieries */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,8 +142,10 @@ html {
 }
 html,
 body {
+  width: 100%;
   font-family: 'Work Sans', sans-serif;
   color: black;
+  background-color: #ecedee;
 }
 h1,
 h2,
@@ -156,7 +165,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 a {
@@ -167,15 +176,38 @@ a {
 a:hover {
   color: red;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
+.textContainer {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: justify;
+  justify-content: flex-start;
+  width: 40%;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/*Home Page*/
 .navBar {
   position: fixed;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  z-index: 1;
+}
+@media (max-width:970px) {
+  .navBar {
+    background: none;
+    position: relative;
+  }
+}
+@media (max-width:501px) {
+  .navBar {
+    background: none;
+    position: absolute;
+  }
 }
 .navContain {
   display: flex;
@@ -184,11 +216,23 @@ a:hover {
   margin: 2rem auto;
   padding: 0 5%;
 }
+@media (max-width:970px) {
+  .navContain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navContain .navButtons {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (max-width:501px) {
+  .navContain .navButtons {
+    visibility: hidden;
+  }
 }
 .navContain a {
   padding: 0 2rem;
@@ -196,10 +240,10 @@ a:hover {
 .logo {
   width: 20%;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+@media (max-width:501px) {
+  .logo {
+    width: 40%;
+  }
 }
 .splash {
   display: flex;
@@ -207,34 +251,347 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.splash .splashHolder {
-  display: flex;
-  width: 100%;
-  padding: 0;
+.splash img {
+  max-width: 100%;
+}
+.splash .CTA {
+  position: absolute;
+  width: 30%;
+  text-align: center;
+}
+@media (max-width:501px) {
+  .splash .CTA {
+    width: 95%;
+    padding: 1%;
+    background: #fffdfdad;
+    border-radius: 5px;
+    margin: 8% 0;
+  }
+}
+.splash .buttonSpace {
+  margin: 9% auto;
+}
+.splash .getApp {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
+  background: #B68F40;
+  width: 30%;
+  padding: 3% 8%;
+  border-radius: 5px;
+  border: 1px solid  ;
+  animation: wobble-hor-bottom 0.8s linear NaNs both;
+}
+.splash .getApp:hover {
+  background: #B6CCA1;
+  color: black;
+  border: 1px solid black;
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.foot {
+  text-align: center;
+  background-color: #30011E;
+  color: #ecedee;
 }
 .one {
   display: flex;
+  position: relative;
+  background: #545454;
+  max-width: 100%;
 }
 .one .stepOneBG {
+  margin: 0 auto;
+}
+.one .stepOneBG img {
+  width: 100%;
+}
+@media (max-width:501px) {
+  .one .stepOneBG img {
+    visibility: hidden;
+  }
+}
+.one .bigOneImg {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 18%;
+}
+@media (max-width:501px) {
+  .one .bigOneImg {
+    margin: 0;
+  }
+}
+.one .oneSVG {
   position: relative;
+  display: flex;
+  width: 300%;
+  justify-content: flex-end;
+  opacity: 0.9;
+}
+@media (max-width:501px) {
+  .one .oneSVG {
+    transform: rotate(90deg);
+    width: 200%;
+    opacity: 1;
+  }
+}
+@media (max-width:501px) {
+  .one .textContainerOne {
+    align-self: center;
+  }
 }
 .one .txtOne {
   position: absolute;
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
+  margin-top: 10%;
+  margin-left: 34%;
+  overflow: hidden;
+  z-index: 1;
+}
+@media (max-width:501px) {
+  .one .txtOne {
+    width: 95%;
+    padding: 1%;
+    background: #fffdfdad;
+    border-radius: 5px;
+    position: initial;
+    margin: 5% auto;
+    padding: 2%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
 }
 .one a {
   font: inherit;
   font-size: 2rem;
-  color: #B68F40;
+  color: black;
   background: #B68F40;
-  width: 40%;
-  padding: 1rem 3rem;
-  border-radius: 10px;
+  width: 30%;
+  padding: 3% 8%;
+  border-radius: 5px;
+  border: 1px solid  ;
+  margin: 4rem 0;
 }
 .one a:hover {
   background: #B6CCA1;
-  color: #B68F40;
-  border: 1px solid #B68F40;
+  color: black;
+  border: 1px solid black;
+}
+.two {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: #B6CCA1;
+  padding: 5rem 8rem 0;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width:501px) {
+  .two {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+}
+.two .containerTwo {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.two .stepTwoImage img {
+  width: 60%;
+  position: relative;
+  z-index: 3;
+}
+@media (max-width:501px) {
+  .two .stepTwoImage img {
+    margin: 0;
+    visibility: hidden;
+  }
+}
+.two .bigTwoImg {
+  position: absolute;
+  width: 15%;
+  margin-left: 78%;
+}
+@media (max-width:501px) {
+  .two .bigTwoImg {
+    position: initial;
+    overflow: auto;
+    margin: 0;
+    width: 150%;
+    transform: rotate(0deg);
+  }
+}
+.two .bigTwoSVG {
+  transform: rotate(90deg);
+  min-width: 100%;
+  z-index: 5;
+}
+@media (max-width:501px) {
+  .two .bigTwoSVG {
+    position: initial;
+    transform: rotate(0deg);
+  }
+}
+.two .txtTwo {
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+@media (max-width:501px) {
+  .two .txtTwo {
+    position: initial;
+    margin: 0;
+  }
+}
+.three {
+  background-color: #30011E;
+  color: #ecedee;
+  width: 100%;
+  z-index: 1;
+}
+.three .stepThreeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+@media (max-width:501px) {
+  .three .stepThreeContainer {
+    flex-flow: column nowrap;
+  }
+}
+.three .textContainerLeft {
+  width: 30%;
+  margin: 0 auto;
+}
+@media (max-width:501px) {
+  .three .textContainerLeft {
+    width: 100%;
+  }
+}
+.three .bigThreeImg {
+  width: 15%;
+  margin: 0 auto;
+}
+@media (max-width:501px) {
+  .three .bigThreeImg {
+    float: right;
+  }
+}
+.three .textContainerRight {
+  width: 30%;
+  margin: 0 auto;
+}
+@media (max-width:501px) {
+  .three .textContainerRight {
+    width: 100%;
+  }
+}
+/*Login Page */
+/* Bordered form */
+body {
+  background: #ecedee;
+}
+.formWrap {
+  padding: 15%;
+  margin: 0 auto;
+  width: 70%;
+  /* Full-width inputs */
+  /* Set a style for all buttons */
+  /* Extra style for the cancel button (red) */
+  /* Add padding to containers */
+  /* under Login spacing */
+  /* Change styles for span and cancel button on extra small screens */
+}
+@media (max-width:970px) {
+  .formWrap {
+    padding: 0;
+  }
+}
+@media (max-width:501px) {
+  .formWrap {
+    width: 100%;
+    padding: 15% 2%;
+  }
+}
+.formWrap .loginForm {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
+  border: 3px solid black;
+}
+.formWrap input[type=text],
+.formWrap input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.formWrap button {
+  font: inherit;
+  font-size: 2rem;
+  color: black;
+  background-color: #30011E;
+  color: #ecedee;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  align-self: center;
+}
+.formWrap button:hover {
+  opacity: 0.8;
+  background-color: #B6CCA1;
+}
+.formWrap .cancelbtn {
+  width: 80%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.formWrap .container {
+  padding: 5%;
+}
+.formWrap .underLogin {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:501px) {
+  .formWrap span.psw {
+    display: block;
+    float: none;
+  }
+  .formWrap button {
+    width: 100%;
+  }
+  .formWrap .cancelbtn {
+    width: 100%;
+  }
 }

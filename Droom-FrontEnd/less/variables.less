@@ -1,21 +1,46 @@
 
+/* Global Colors */
+@main-background:@shell;
 
-@main-background:@Shell;
+@nav-bg:@shell-transparent;
 
-@button-bg: @Brass;
-@button-font-color: @Brass;
+/*button Colors */
+@button-bg: @brass;
+@button-font-color: black;
+    // Hover Colors
+    @button-bg-hover:@laurel-green;
+    @button-font-hover:black;
 
-@button-bg-hover:@Laurel-Green;
-@button-font-hover:black;
+/* Home Page - step 1 */
+
+@step-one-bg:@davy-grey;
+
+/* Home Page - Step 2 Colors */
+
+@step-two-bg:@laurel-green;
+
+
+/*Home Page - Step 3 Colors*/
+@step-three-bg:@dark-sienna;
+@step-three-font:@shell;
+
+
+/* mobile text background */
+@mobile-bg:@shell-transparent;
 
 
 /* Colors */
 @dark-sienna: #30011E;
-@Nyanza:#D7FCD4;
-@Laurel-Green:#B6CCA1;
-@Brass:#B68F40;
-@Davy-Grey:#545454;
-@Shell:#ecedee;
+@nyanza:#D7FCD4;
+@laurel-green:#B6CCA1;
+@brass:#B68F40;
+@davy-grey:#545454;
+@shell:#ecedee;
+@shell-transparent:#fffdfdad;
 
+
+/* Media Quieries */
+
+@web2: ~"{max-width:1650px)";
 @mobile: ~"(max-width:501px)";
-@tablet: ~"(max-width:800px)";
+@tablet: ~"(max-width:970px)";
