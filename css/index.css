@@ -166,7 +166,7 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 a {
@@ -251,9 +251,14 @@ a:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-.splash img {
-  max-width: 100%;
+  position: abso;
+  background-image: url('../img/Back-splash-1.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 5%;
+  width: 100%;
+  height: auto%;
+  max-height: 800px;
 }
 .splash .CTA {
   position: absolute;
@@ -295,7 +300,8 @@ a:hover {
 .one {
   display: flex;
   position: relative;
-  background: #545454;
+  background-image: url("../img/step\ 1/step-1-background-nophone.png");
+  width: 100%;
   max-width: 100%;
 }
 .one .stepOneBG {
@@ -450,6 +456,9 @@ a:hover {
   color: #ecedee;
   width: 100%;
   z-index: 1;
+}
+.three h1 {
+  color: #ecedee;
 }
 .three .stepThreeContainer {
   display: flex;
