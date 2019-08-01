@@ -5,6 +5,10 @@
     position: fixed;
 }
 
+.container {
+    box-sizing: border-box;
+}
+
 .splash {
     background-color: @step-one-bg;
     background-image: url('../img/Back-splash-1.png');
@@ -130,13 +134,19 @@
 /* step Two Styling */
 
 .two {
+    box-sizing: border-box;
     background: @step-two-bg;
+    background-image: url('../img/SVGNumbers/two.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+
 
     .containerTwo {
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
+        align-items: flex-end;
         justify-items: space-between;
+        // position: absolute;
     }
 
     .textContainerTwo {
@@ -144,23 +154,49 @@
         margin: 5%;
     }
 
-    #ipad {
-        width: 50%;
+    .stepTwo Image {
+        position: absolute;
+        z-index: 4;
+        padding: 1% 1% 0;
+
     }
 
-    #twoSVG {
-        width: 100%;
+    #ipad {
+        width: 70%;
+
+        @media @tablet {
+            display: none;
+        }
     }
+
+
+    // .bigTwoImg{
+    //     position: relative;
+    //     z-index: 3;
+    //     margin-right:40%;
+    // }
+
+    // #twoSVG {
+    //     // transform: rotate(90deg);
+    //     width: 300%;
+    // }
+
 
 
 }
 
+/* Step Three Styling */
+
 .three {
     background: @step-three-bg;
+    background-image: url('../img/Step\ 3/step-3-background.jpg');
+    background-position: bottom right;
     color: @step-three-font;
+
 
     h1 {
         color: @step-three-font;
+
     }
 
     .stepThreeContainer {
@@ -186,7 +222,7 @@
         text-align: center;
     }
 
-    .textBox p{
+    .textBox p {
         padding: 10px;
     }
 }

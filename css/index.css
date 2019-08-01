@@ -250,6 +250,9 @@ a:hover {
   background: none;
   position: fixed;
 }
+.container {
+  box-sizing: border-box;
+}
 .splash {
   background-color: #545454;
   background-image: url('../img/Back-splash-1.png');
@@ -380,26 +383,40 @@ a:hover {
 }
 /* step Two Styling */
 .two {
+  box-sizing: border-box;
   background: #B6CCA1;
+  background-image: url('../img/SVGNumbers/two.svg');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .two .containerTwo {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: flex-end;
   justify-items: space-between;
 }
 .two .textContainerTwo {
   padding: 2%;
   margin: 5%;
 }
+.two .stepTwo Image {
+  position: absolute;
+  z-index: 4;
+  padding: 1% 1% 0;
+}
 .two #ipad {
-  width: 50%;
+  width: 70%;
 }
-.two #twoSVG {
-  width: 100%;
+@media (max-width:970px) {
+  .two #ipad {
+    display: none;
+  }
 }
+/* Step Three Styling */
 .three {
   background: #30011E;
+  background-image: url('../img/Step\ 3/step-3-background.jpg');
+  background-position: bottom right;
   color: #ecedee;
 }
 .three h1 {
@@ -429,14 +446,16 @@ a:hover {
 .foot {
   display: flex;
   background: #ecedee;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  padding: 1%;
 }
 .footer-social-icons {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0;
+  width: 500px;
   margin: 0 auto;
 }
 .footer-social-icons .social-icon {
@@ -445,10 +464,9 @@ a:hover {
 .footer-social-icons ul.social-icons {
   margin-top: 10px;
 }
-.footer-social-icons .social-icons li {
+.footer-social-icons .social-icons span {
   vertical-align: top;
-  display: inline;
-  height: 100px;
+  height: 5%;
 }
 .footer-social-icons .social-icons a {
   color: #fff;
