@@ -251,14 +251,12 @@ a:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  position: abso;
   background-image: url('../img/Back-splash-1.png');
   background-repeat: no-repeat;
-  background-size: auto;
-  padding: 5%;
+  background-size: 100%;
+  background-clip: content-box;
   width: 100%;
-  height: auto%;
-  max-height: 800px;
+  height: 500px;
 }
 .splash .CTA {
   position: absolute;
@@ -298,60 +296,58 @@ a:hover {
   color: #ecedee;
 }
 .one {
-  display: flex;
   position: relative;
+  background-color: #545454;
   background-image: url("../img/step\ 1/step-1-background-nophone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 30%;
+}
+.sectionOneWrap {
+  position: relative;
+  display: flex;
   width: 100%;
-  max-width: 100%;
 }
-.one .stepOneBG {
-  margin: 0 auto;
-}
-.one .stepOneBG img {
-  width: 100%;
-}
-@media (max-width:501px) {
-  .one .stepOneBG img {
-    visibility: hidden;
-  }
-}
-.one .bigOneImg {
-  position: absolute;
+.sectionOneWrap .bigOneImg {
   margin-top: 10%;
   margin-left: 18%;
+  width: 15%;
 }
 @media (max-width:501px) {
-  .one .bigOneImg {
+  .sectionOneWrap .bigOneImg {
     margin: 0;
   }
 }
-.one .oneSVG {
-  position: relative;
-  display: flex;
-  width: 300%;
+.sectionOneWrap .oneSVG {
   justify-content: flex-end;
   opacity: 0.9;
+  float: left;
 }
 @media (max-width:501px) {
-  .one .oneSVG {
+  .sectionOneWrap .oneSVG {
     transform: rotate(90deg);
     width: 200%;
     opacity: 1;
   }
 }
-@media (max-width:501px) {
-  .one .textContainerOne {
-    align-self: center;
+.sectionOneWrap .txtOne {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 34%;
+  text-align: justify;
+  line-height: 1.2;
+  width: 35%;
+  z-index: 1;
+  flex-shrink: 1;
+}
+@media (max-width:970px) {
+  .sectionOneWrap .txtOne {
+    width: 80%;
   }
 }
-.one .txtOne {
-  position: absolute;
-  margin-top: 10%;
-  margin-left: 34%;
-  z-index: 1;
-}
 @media (max-width:501px) {
-  .one .txtOne {
+  .sectionOneWrap .txtOne {
     width: 95%;
     padding: 1%;
     background: #fffdfdad;
@@ -367,7 +363,13 @@ a:hover {
     min-width: 100%;
   }
 }
-.one a {
+.sectionOneWrap .buttonWrap {
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10%;
+  padding: 1%;
+}
+.sectionOneWrap .stepOneButton {
   font: inherit;
   font-size: 2rem;
   color: black;
@@ -376,9 +378,8 @@ a:hover {
   padding: 3% 8%;
   border-radius: 5px;
   font-weight: bold;
-  margin: 4rem 0;
 }
-.one a:hover {
+.sectionOneWrap .stepOneButton:hover {
   background: #B6CCA1;
   color: black;
   border: 1px solid black;
@@ -417,7 +418,6 @@ a:hover {
 }
 .two .bigTwoImg {
   position: absolute;
-  width: 15%;
   margin-left: 78%;
 }
 @media (max-width:501px) {
@@ -429,13 +429,11 @@ a:hover {
     transform: rotate(0deg);
   }
 }
-.two .bigTwoSVG {
+.two #bigTwoSVG {
   transform: rotate(90deg);
-  min-width: 100%;
-  z-index: 5;
 }
 @media (max-width:501px) {
-  .two .bigTwoSVG {
+  .two #bigTwoSVG {
     position: initial;
     transform: rotate(0deg);
   }

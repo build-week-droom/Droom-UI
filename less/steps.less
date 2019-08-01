@@ -1,35 +1,30 @@
-.one {
-    // border: 1px solid red;
-
-    display: flex;
-    position: relative;
-    // background: @step-one-bg;
+.one{
+    position:relative;
+    background-color:@step-one-bg;
     background-image: url("../img/step\ 1/step-1-background-nophone.png");
+    background-repeat: no-repeat;
+    // background-position: center bottom;
+    background-size: cover;
+    // background-attachment: fixed;
+    // background-clip: content-box;
+    height:0;
+    padding-bottom: 30%;
+    
+}
+
+.sectionOneWrap{
+    position: relative;
+    display:flex;
     width:100%;
-    max-width: 100%;
-
-
-    .stepOneBG {
-        margin: 0 auto;
-
-    }
-
-    .stepOneBG img {
-        width: 100%;
-
-        @media @mobile {
-            visibility: hidden;
-        }
-    }
-
-
+    
 
     .bigOneImg {
         // border: 1px solid green;
 
-        position: absolute;
+        // position: absolute;
         margin-top: 10%;
         margin-left: 18%;
+        width: 15%;
 
 
         @media @mobile {
@@ -40,13 +35,10 @@
     }
 
     .oneSVG {
-        position: relative;
-        display: flex;
-        width: 300%;
         justify-content: flex-end;
         opacity: .9;
-        // overflow: hidden;  
-        // z-index: 2;
+        float:left;
+
 
         @media @mobile {
             transform: rotate(90deg);
@@ -57,19 +49,23 @@
     }
 
 
-    .textContainerOne {
-        @media @mobile {
-            align-self: center;
-        }
-    }
+
 
     .txtOne {
         position: absolute;
-        margin-top: 10%;
+        margin-top: 5%;
         margin-left: 34%;
+        text-align: justify;
+        line-height: 1.2;
         // overflow: hidden;
+        // padding-bottom: 10%;
+        width:35%;
         z-index: 1;
+        flex-shrink:1;
 
+        @media  @tablet {
+            width:80%;
+        }
 
 
         @media @mobile {
@@ -86,11 +82,19 @@
         }
     }
 
+    .buttonWrap{
+        // position: fixed;
+        justify-content: center;
+        align-items: flex-end;
+        margin:10%;
+        padding: 1%;
+    }
 
-
-    a {
+    .stepOneButton {
         .buttonStyle;
-        margin: 4rem 0;
+
+
+
     }
 }
 
@@ -137,7 +141,7 @@
         // border: 1px solid orange;
 
         position: absolute;
-        width: 15%;
+        // width: 15%;
         margin-left: 78%;
 
         @media @mobile {
@@ -151,10 +155,9 @@
 
     }
 
-    .bigTwoSVG {
+    #bigTwoSVG {
         transform: rotate(90deg);
-        min-width: 100%;
-        z-index: 5;
+        
 
         @media @mobile {
             position: initial;
