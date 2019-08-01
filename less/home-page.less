@@ -1,65 +1,133 @@
+#homeNav {
+    //Fixed menu for home page only!
+
+    background: none;
+    position: fixed;
+}
 
 .splash {
+    background-color: @step-one-bg;
+    background-image: url('../img/Back-splash-1.png');
+
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 20% 20%;
+    height: auto;
 
-    // background properties
-    background-image: url('../img/Back-splash-1.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-clip: content-box;
-
-    width: 100%;
-    height:500px;
+    @media @tablet {
+        padding: 20% 5%;
+    }
 
 
 
-    // img {
-    //     max-width: 100%;
-    //     // min-width: 1200px;
+    .cta {
+        background: @shell-transparent;
+        border-radius: 5px;
 
-    //     // @media @mobile {
-    //     //     overflow: hidden;
-    //     //  min-width: 800px;   
-    //     // }
-    // }
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 8% 4%;
+        height: auto;
 
-    .CTA {
 
-        position: absolute;
-        width: 30%;
-        text-align: center;
-        // margin-bottom: 20%;
+        @media @tablet {
+            background: none;
+            margin-top: 5%;
+            padding: 0;
 
-        @media @mobile{
-            .mobileTextStyle;
-            margin:8% 0;
-            // width:95%;
-            // padding: 1%;
-            // background:@mobile-bg;
-            // border-radius: 5px;
-            // background: red;
         }
-    
     }
 
-    .buttonSpace {
-        // border:1px solid red;
-        margin: 9% auto;
+    #ctaText {
+        text-align: center;
+        width: 90%;
+        padding: 5%;
     }
 
-    .getApp {
-        .buttonStyle;
-        // .wobbleKey();
-        // .wobbleAnimation();
+    #getApp {
+        .buttonStyle();
+        width: 100%;
+        padding: 5px 20px;
     }
 }
 
+/* step one styling */
 
-.foot{
-    text-align: center;
-    background-color: @step-three-bg;
-    color: @step-three-font;
+.one {
+    background: @step-one-bg;
+    background-image: url('../img/step\ 1/Step-1-background.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    // width:100%;
+
+    @media @web {
+        background-image: url('../img/step\ 1/Step-1-background-nophone.png');
+        background-size:180%;
+        background-position: center;
+    }
+
+    @media @webSmaller {
+        background-size:auto;
+        background-position: bottom center;
+    }
+
+
+    .sectionOneWrap {
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: flex-end;
+        padding: 2% 5%;
+        margin: 0 auto;
+
+        @media @web {
+            justify-content:flex-start;
+        }
+
+        @media @webSmaller {
+            flex-direction: row-reverse;
+            justify-content:flex-end;
+        }
+    }
+
+    .textContainerOne {
+        padding: 5%;
+        width: 60%;
+        line-height: 1.4;
+
+
+        @media @mobile {
+            width: 100%;
+        }
+
+    }
+
+    #oneSVG {
+        //Large One on first instruction row
+        width: 100%;
+        transform: rotate(-90deg);
+
+        @media @web {
+            transform: rotate(0);
+        }
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+
+    #stepOneButton{
+        .buttonStyle();
+        width: 100%;
+        padding: 5px 20px;
+    }
+
+}
+/* step Two Styling */
+
+.two{
+
 }
