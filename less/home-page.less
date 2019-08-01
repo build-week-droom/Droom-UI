@@ -103,6 +103,7 @@
 
 
         @media @mobile {
+            text-align: center;
             width: 100%;
         }
 
@@ -152,6 +153,12 @@
     .textContainerTwo {
         padding: 2%;
         margin: 5%;
+        @media @mobile {
+            background:@shell-transparent;
+            border-radius: 5px;
+
+            text-align: center;
+        }
     }
 
     .stepTwo Image {
@@ -189,9 +196,10 @@
 
 .three {
     background: @step-three-bg;
-    background-image: url('../img/Step\ 3/step-3-background.jpg');
+    background-image: url('../img/Step\ 3/step-3-alt.jpg');
     background-position: bottom right;
     color: @step-three-font;
+    padding:5%;
 
 
     h1 {
@@ -204,12 +212,25 @@
         flex-flow: Row nowrap;
         align-items: center;
         justify-content: space-around;
+        margin: 0 auto;
 
-        padding: 2%;
+        // div#numDiv {order: 3;}
+        // div#leftDiv  {order: 2;}
+        // div#rightDiv  {order: 1;}
+        // padding: 2%;
+
+        @media @tablet {
+            flex-flow: column nowrap;
+
+        }
     }
 
     #threeSVG {
-        width: 100%;
+        width: 200%;
+
+        @media @tablet {
+            transform: rotate(-45deg);
+        }
     }
 
     .textWrap {

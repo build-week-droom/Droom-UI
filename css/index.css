@@ -254,7 +254,7 @@ a:hover {
   box-sizing: border-box;
 }
 .splash {
-  background-color: #545454;
+  background-color: #e0e0e0;
   background-image: url('../img/Back-splash-1.png');
   display: flex;
   justify-content: center;
@@ -306,7 +306,7 @@ a:hover {
 }
 /* step one styling */
 .one {
-  background: #545454;
+  background: #e0e0e0;
   background-image: url('../img/step\ 1/Step-1-background.png');
   background-repeat: no-repeat;
   background-size: 120%;
@@ -349,6 +349,7 @@ a:hover {
 }
 @media (max-width:501px) {
   .one .textContainerOne {
+    text-align: center;
     width: 100%;
   }
 }
@@ -399,6 +400,13 @@ a:hover {
   padding: 2%;
   margin: 5%;
 }
+@media (max-width:501px) {
+  .two .textContainerTwo {
+    background: #fffdfdad;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
 .two .stepTwo Image {
   position: absolute;
   z-index: 4;
@@ -415,9 +423,10 @@ a:hover {
 /* Step Three Styling */
 .three {
   background: #30011E;
-  background-image: url('../img/Step\ 3/step-3-background.jpg');
+  background-image: url('../img/Step\ 3/step-3-alt.jpg');
   background-position: bottom right;
   color: #ecedee;
+  padding: 5%;
 }
 .three h1 {
   color: #ecedee;
@@ -427,10 +436,20 @@ a:hover {
   flex-flow: Row nowrap;
   align-items: center;
   justify-content: space-around;
-  padding: 2%;
+  margin: 0 auto;
+}
+@media (max-width:970px) {
+  .three .stepThreeContainer {
+    flex-flow: column nowrap;
+  }
 }
 .three #threeSVG {
-  width: 100%;
+  width: 200%;
+}
+@media (max-width:970px) {
+  .three #threeSVG {
+    transform: rotate(-45deg);
+  }
 }
 .three .textWrap {
   display: flex;
