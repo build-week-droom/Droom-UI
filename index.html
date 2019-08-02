@@ -2,6 +2,8 @@
 
 <html lang="en">
 
+
+
 <head>
   <meta charset="utf-8">
 
@@ -10,16 +12,19 @@
 
 
   <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+
   <link href="css/index.css" rel="stylesheet">
 
-
-  <!-- Bootstrap load in -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <meta name=“viewport” content=“width=device-width, initial-scale=1">
 
+
+
 </head>
 
+
+<html>
 <header id="homeNav" class="navBar">
   <div class="navContain">
     <a href="index.html">
@@ -58,11 +63,13 @@
 
     <div class="sectionOneWrap">
 
-      <div class="largeNumber bigOneImg">
-        <img src="img/SVGNumbers/one.svg" alt="Step One" id="oneSVG">
+      <div data-aos="fade-down">
+        <div class="largeNumber bigOneImg">
+          <img src="img/SVGNumbers/one.svg" alt="Step One" id="oneSVG">
+        </div>
       </div>
 
-      <div class="textContainerOne ">
+      <div class="textContainerOne " data-aos ="fade-left">
         <h1>Did you know ?</h1>
         <h2>The Dutch word for dream is droom.</h2>
         <p>
@@ -110,9 +117,9 @@
       </div>
 
       <!-- <div class=" bigTwoImg">
-          <img src="img/SVGNumbers/two.svg" alt="Step two"="bigTwoSVG" id="twoSVG">
-        </div> -->
-      
+            <img src="img/SVGNumbers/two.svg" alt="Step two"="bigTwoSVG" id="twoSVG">
+          </div> -->
+
 
     </div>
 
@@ -121,7 +128,7 @@
 
   <section class="three">
 
-    <div class="stepThreeContainer">
+    <div class="stepThreeContainer ">
 
       <div class="textWrap textContainerLeft">
         <div id="leftDiv" class=" textBox textLeft">
@@ -135,7 +142,7 @@
         </div>
       </div>
 
-      <div id="numDiv" class=" bigThreeImg">
+      <div id="numDiv" class=" bigThreeImg" data-aos="zoom-out-up">
         <img src="img/SVGNumbers/three-white.svg" alt="Step three" id="threeSVG">
       </div>
 
@@ -154,30 +161,39 @@
   </section>
   <!--End of Section Three-->
 
+  <!--Scripts-->
+  <script>
+    AOS.init();
+  </script>
+
+  <footer class="foot">
+
+    <div class="footer-social-icons">
+      <p>Copyright Droom 2019</p>
+      <br>
+      <h4 class="_14">Follow us on</h4>
+      <div class="social-icons">
+        <span><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></span>
+        <span><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></span>
+        <span><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></span>
+        <span><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></span>
+        <span><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></span>
+        <span><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></span>
+        </span>
+      </div>
+
+  </footer>
+
+  <!--SCRIPTS !-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+
+
 </body>
 
-<footer class="foot">
-
-  <div class="footer-social-icons">
-    <p>Copyright Droom 2019</p>
-    <br>
-    <h4 class="_14">Follow us on</h4>
-    <div class="social-icons">
-      <span><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></span>
-      <span><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></span>
-      <span><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></span>
-      <span><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></span>
-      <span><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></span>
-      <span><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></span>
-      </span>
-    </div>
-
-</footer>
-
-<!--bootstrap scripts-->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</html>
